@@ -1,9 +1,9 @@
-import Pai from "./components/Pai";
+import ListaDeProdutos from "./components/aula4/ListaDeProdutos";
 
 function App() {
   return (
     <div>
-      <Pai />
+      <ListaDeProdutos />
     </div>
   );
 }
