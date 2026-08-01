@@ -1,21 +1,21 @@
-import { useState } from "react";
-import LoginStatus from "./LoginStatus";
-import Notification from "./Notification";
+import ButtonStyled from "./components/aula6/ButtonStyled";
+import ButtonCSS from "./components/aula6/ButtonCSS";
+import ButtonInline from "./components/aula6/ButtonInline";
+import TailwindButton from "./components/aula6/TailwindButton";
 
 function App() {
-  const [isLoggedIn, setIsLoggedIn] = useState(false);
-  const [showNotif, setShowNotif] = useState(false);
-
   return (
     <div>
-      <LoginStatus isLoggedIn={isLoggedIn} />
-      <Notification showNotification={showNotif} />
-      <button onClick={() => setIsLoggedIn(!isLoggedIn)}>
-        {isLoggedIn ? "Logout" : "Login"}
-      </button>
-      <button onClick={() => setShowNotif(!showNotif)}>
-        {showNotif ? "Ocultar" : "Mostrar"} Notificação
-      </button>
+      <h1>Botão com CSS Externo</h1>
+      <ButtonCSS label="CSS Externo" />
+      <h1>Botão com Inline Styles</h1>
+      <ButtonInline label="Primário" primary />
+      <ButtonInline label="Secundário" />
+      <h1>Botão com Styled Components</h1>
+      <ButtonStyled label="Primário" primary />
+      <ButtonStyled label="Secundário" />
+      <h1>Botão com Tailwind CSS</h1>
+      <TailwindButton label="Botão" />
     </div>
   );
 }
