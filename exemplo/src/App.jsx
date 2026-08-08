@@ -1,11 +1,11 @@
-import React from "react";
-import PlacarDoJogo from "./components/PlacarDoJogo";
+import "./App.css";
+import ExemploPlacarJogo from "./components/ExemploPlacar";
 
 function App() {
   return (
-    <div>
-      <PlacarDoJogo />
-    </div>
+    <>
+      <ExemploPlacarJogo />
+    </>
   );
 }
 
