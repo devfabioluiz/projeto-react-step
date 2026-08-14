@@ -4,6 +4,7 @@ import About from "./components/aula10/About";
 import Contact from "./components/aula10/Contact";
 import Navbar from "./components/aula10/Navbar";
 import Navbar2 from "./components/aula10/Navbar2";
+import "./App.css";
 
 const App = () => {
   return (
