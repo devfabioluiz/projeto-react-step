@@ -5,6 +5,7 @@ const Exemplo = () => {
     <ul>
       {lista
         .filter((valor) => valor % 2 === 0)
+
         .map((valor) => (
           <li key={valor}>{valor}</li>
         ))}
