@@ -1,5 +1,5 @@
-import { ThemeProvider } from "./ThemeContext";
-import ThemeSwitcher from "./ThemeSwitcher";
+import { ThemeProvider } from "./components/aula12/ThemeContext";
+import ThemeSwitcher from "./components/aula12/ThemeSwitcher";
 
 const App = () => {
   return (

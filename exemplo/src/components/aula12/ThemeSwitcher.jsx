@@ -1,4 +1,5 @@
 import { useTheme } from "./ThemeContext";
+import { Sun, Moon } from "lucide-react";
 
 const ThemeSwitcher = () => {
   const { theme, toggleTheme } = useTheme();
@@ -12,9 +13,8 @@ const ThemeSwitcher = () => {
         minHeight: "100vh",
       }}
     >
-      <h1>Tema atual: {theme}</h1>
       <button onClick={toggleTheme}>
-        Alternar para {theme === "light" ? "dark" : "light"}
+        {theme === "light" ? <Sun size={40} /> : <Moon size={40} />}
       </button>
     </div>
   );
